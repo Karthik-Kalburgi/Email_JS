@@ -20,7 +20,7 @@ const EmailForm = () => {
     };
 
     emailjs
-      .send(serviceId, templateId, publicKey, templateParams)
+      .send(serviceId, templateId, templateParams, publicKey)
       .then((response) => {
         console.log("Email Has Sent Succesfully !!!!!", response);
         setName("");
@@ -35,7 +35,7 @@ const EmailForm = () => {
   return (
     <div>
       <div>
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} className="emailForm">
           <input
             type="text"
             placeholder="Enter Your Name..."
