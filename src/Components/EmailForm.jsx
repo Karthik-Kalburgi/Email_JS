@@ -8,9 +8,9 @@ const EmailForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const serviceId = "service_aqv46ew";
-    const templateId = "template_odtrfvk";
-    const publicKey = "KlO73PmloElJU-C1p";
+    const serviceId = "kservice_aqv46ewk";
+    const templateId = "ktemplate_odtrfvkk";
+    const publicKey = "kKlO73PmloElJU-C1pk";
 
     const templateParams = {
       from_name: name,
